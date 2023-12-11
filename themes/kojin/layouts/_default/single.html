@@ -2,5 +2,13 @@
 <article class="prose max-w-4xl mx-auto bg-white border shadow rounded-xl p-8">
     {{ .Content }}
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+    {{ if isset .Params "comment" }}
+        {{ if eq .Params.comment true }}
+        <div class="disqus mt-16">
+            {{ template "_internal/disqus.html" . }}
+        </div>
+        {{ end }}
+    {{ end }}
 </article>
 {{ end }}
