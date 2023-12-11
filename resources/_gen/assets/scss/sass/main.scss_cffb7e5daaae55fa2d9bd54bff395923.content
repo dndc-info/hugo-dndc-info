@@ -1169,6 +1169,9 @@ body{
 .flex-col{
   flex-direction: column;
 }
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
 .flex-nowrap{
   flex-wrap: nowrap;
 }
