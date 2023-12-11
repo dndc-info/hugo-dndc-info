@@ -1169,9 +1169,6 @@ body{
 .flex-col{
   flex-direction: column;
 }
-.flex-col-reverse{
-  flex-direction: column-reverse;
-}
 .flex-nowrap{
   flex-wrap: nowrap;
 }
@@ -1701,5 +1698,8 @@ body{
 @media (min-width: 1280px){
   .xl\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .xl\:gap-4{
+    gap: 1rem;
   }
 }
