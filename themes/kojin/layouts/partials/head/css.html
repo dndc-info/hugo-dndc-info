@@ -1,0 +1,10 @@
+<!-- TailwindCSSを読み込み 
+<script src="https://cdn.tailwindcss.com"></script>
+-->
+
+<!-- LightboxのCSSを読み込み -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+{{ with resources.Get "sass/main.scss" | toCSS | postCSS }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}

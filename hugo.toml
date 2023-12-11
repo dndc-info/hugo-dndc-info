@@ -1,0 +1,65 @@
+baseURL = 'https://dndc.info/'
+languageCode = 'ja-jp'
+title = 'dndc.info'
+theme = 'kojin'
+hasCJKLanguage = true
+summaryLength = 140
+
+[services]
+    [services.disqus]
+        shortname = 'dndc'
+    [services.googleAnalytics]
+        ID = 'G-TNE3N44JH2'
+
+
+[menu]
+[[menu.main]]
+name = "Tech"
+weight = 2
+identifier = "tech"
+url = "/blog/tech/"
+[[menu.main]]
+name = "Gallery"
+weight = 2
+identifier = "gallery"
+url = "/gallery/"
+
+[params]
+icon = "/images/icon.png"
+author = "Dondoco"
+author2 = "ドンドコ"
+desc = "ゲーム開発会社でセットアップアーティストとして仕様策定などをしていました。MayaとUE5がメインツールで、一応Substance PainterとZBrushとMarvelous Designerなども使えます。2024年からはTAとして働きます。"
+copy = "dndc.info"
+link-color = "mediumpurple"
+
+[[params.social]]
+title = "Misskey"
+icon = "/images/Misskey.png"
+url = "https://morijio.space/@dndc"
+[[params.social]]
+title = "Wavebox"
+icon = "/images/Wavebox.png"
+url = "https://wavebox.me/wave/9bshd53r9pbuinzr/"
+[[params.social]]
+title = "Scrapbox"
+icon = "/images/Scrapbox.png"
+url = "https://scrapbox.io/dndc-public/"
+[[params.social]]
+title = "GitHub"
+icon = "/images/GitHub.png"
+url = "https://github.com/dndc-info"
+[[params.social]]
+title = "Steam"
+icon = "/images/Steam.png"
+url = "https://steamcommunity.com/id/dondoc0/"
+
+[[params.links]]
+title = "OFUSE"
+url = "https://ofuse.me/dndc"
+
+[[params.footer]]
+title = "お問い合わせ"
+url = "/contact/"
+[[params.footer]]
+title = "プライバシーポリシー"
+url = "/privacy-policy/"

@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="prose max-w-4xl mx-auto bg-white border shadow rounded-xl p-8">
+<div class="prose max-w-4xl mx-auto">
+{{ .Content }}
+</div>
+
+<div class="columns-2 md:columns-3 lg:columns-4 my-10">
+  {{- $images := .Resources.ByType "image" -}}
+  {{ range $images }}
+  <div class="mb-4">
+    <a href="{{ .RelPermalink }}" data-lightbox="Gallery">
+      <img src="{{ .RelPermalink }}" loading="eager" alt="Gallery Image" class="img-fluid">
+    </a>
+  </div>
+  {{ end }}
+</div>
+{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+</article>
+{{ end }}

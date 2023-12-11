@@ -1,0 +1,10 @@
+
+<div class="flex flex-raw justify-center my-0">
+{{ range .Site.Params.footer }}
+    <a class="text-sm mx-1 mt-8 mb-2" href="{{ .url }}">{{ .title }}</a>
+{{ end }}
+</div>
+
+{{ with .Site.Params.copy }}
+<div class="mx-auto text-center mb-8 text-sm">&copy; {{ . }}</div>
+{{ end }}

@@ -1,0 +1,33 @@
+<div class="mx-auto max-w-lg p-4">
+    {{ with .Site.Params.icon }}
+    <img class="mx-auto rounded-full w-3/12" src="{{ . }}" alt="icon" />
+    {{ end }}
+
+    {{ with .Site.Params.author }}
+    <div class="text-xl text-center mt-2">{{ . }}</div>
+    {{ end }}
+    {{ with .Site.Params.author2 }}
+    <div class="text-sm text-center mb-4">{{ . }}</div>
+    {{ end }}
+
+    <div class="flex flex-raw justify-center my-4">
+        {{ range .Site.Params.social }}
+        <a class="bg-white rounded-full shadow border mx-1 transition ease delay-180 hover:scale-110" href="{{ .url }}">
+            <img width="36px" height="auto" src="{{ .icon }}" alt="{{ .title }}">
+        </a>
+        {{ end }}
+    </div>
+    <div class="flex flex-col justify-center my-4">
+        {{ range .Site.Params.links }}
+        <a class="inline-block w-60 max-w-xs bg-white text-gray-700 text-center border p-4 rounded-full shadow mx-auto transition ease delay-180 hover:scale-110"
+            href="{{ .url }}">
+            {{ .title }}
+        </a>
+        {{ end }}
+    </div>
+    <div class="prose">
+        {{ with .Site.Params.desc }}
+        <p class="my-8">{{ . }}</p>
+        {{ end }}
+    </div>
+</div>

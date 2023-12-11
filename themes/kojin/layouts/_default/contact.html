@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+    dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+    <div class="container mx-auto px-8">
+        <header>
+            {{ partial "header.html" . }}
+        </header>
+        <main>
+            <div class="flex justify-center">
+                {{ partial "contact.html" . }}
+            </div>
+        </main>
+        <footer>
+            {{ partial "footer.html" . }}
+        </footer>
+    </div>
+</body>
+
+</html>

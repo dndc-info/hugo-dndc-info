@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-gray-100;
+    }
+    .sidebar {
+        h2 {
+            @apply border-l-4 border-gray-700 pl-2 py-2 font-bold text-gray-700 text-xl;
+        }
+    }
+}
+
+@layer utilities {
+    .hidden-scrollbar {
+        -ms-overflow-style: none;
+        /* IE, Edge 対応 */
+        scrollbar-width: none;
+        /* Firefox 対応 */
+    }
+
+    .hidden-scrollbar::-webkit-scrollbar {
+        /* Chrome, Safari 対応 */
+        display: none;
+    }
+}

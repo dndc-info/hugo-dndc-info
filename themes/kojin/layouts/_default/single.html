@@ -1,0 +1,7 @@
+{{ define "main" }}
+<article class="prose max-w-4xl mx-auto bg-white border shadow rounded-xl p-8">
+    {{ .Content }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+>>>>>>> dev
+</article>
+{{ end }}
