@@ -2,7 +2,7 @@
 title: "Homo Necrosis"
 slug: "homo-necrosis"
 date: 2023-11-29T15:30:00+09:00
-thumb: "https://i.gyazo.com/6a4dc6f8228a69e488aad8b45b25e102.webp"
+cover: "https://i.gyazo.com/6a4dc6f8228a69e488aad8b45b25e102.webp"
 type: gallery
 ---
 

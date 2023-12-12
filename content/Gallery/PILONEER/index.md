@@ -2,7 +2,7 @@
 title: "PILONEER"
 slug: "piloneer"
 date: 2023-11-29T15:30:00+09:00
-thumb: "https://i.gyazo.com/50716084b91074d4b9c511a9a6d00f83.webp"
+cover: "https://i.gyazo.com/50716084b91074d4b9c511a9a6d00f83.webp"
 type: gallery
 ---
 
