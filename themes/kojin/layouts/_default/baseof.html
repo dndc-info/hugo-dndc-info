@@ -6,8 +6,8 @@
   {{ partial "head.html" . }}
 </head>
 
-<body class="hidden-scrollbar container mx-auto">
-  <div class="mx-1 sm:mx-auto">
+<body class="hidden-scrollbar">
+  <div class="container mx-auto px-1">
     <header>
       {{ partial "header.html" . }}
     </header>
@@ -30,11 +30,11 @@
         {{ partial "searchinput.html" . }}
       </div>
     </div>
-    {{ partial "back-to-top.html" . }}
-    <footer>
-      {{ partial "footer.html" . }}
-    </footer>
   </div>
+  {{ partial "back-to-top.html" . }}
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
 </body>
 
 </html>
