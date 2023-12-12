@@ -11,11 +11,10 @@ summaryLength = 140
             unsafe = true
 
 [services]
-[services.disqus]
-shortname = 'dndc'
-[services.googleAnalytics]
-ID = 'G-TNE3N44JH2'
-
+    [services.googleAnalytics]
+        ID = 'G-TNE3N44JH2'
+    [services.disqus]
+        shortname = 'dndc'
 
 [menu]
 [[menu.main]]
