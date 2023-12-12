@@ -29,6 +29,11 @@ identifier = "gallery"
 url = "/gallery/"
 
 [params]
+# OGP設定
+description = 'ドンドコの雑記サイト'
+images = ['/images/icon.png']
+title = 'dndc.info'
+# テーマ設定
 icon = "/images/icon.png"
 author = "Dondoco"
 author2 = "ドンドコ"
